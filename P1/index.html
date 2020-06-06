@@ -1,0 +1,356 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ALLECHE Style Guide</title>
+  <link rel="stylesheet" href="style.css">
+ </head>
+
+
+
+ <body>
+  <h1>ALLECHE's STYLE GUIDE</h1>
+
+    <ul>
+      <li><a href="citation.html">citation page</a></li>
+      <li><a href="wireframe.html">wireframe page</a></li>
+    </ul>
+
+  <p><h3>INTERACTIVE ELEMENTS</h3></p>
+  
+  <h4>In-text link</h4>
+  <p>Rendered Element</p>
+  <a href="#" class="intextlink">This is a link</a>
+  <p>Sample Code</p>
+  <xmp><a href="#" class="intextlink">This is a link</a></xmp>
+  <p>CSS Selector</p>
+  <p>.intextlink, .intextlink:hower, .intextlink:focus</p>
+  
+  <div style="width:500px; border:1px solid gray;"></div>
+  
+  <h4>Navigation button</h4>
+  <p>Rendered Element</p>
+  <button class="navbutton">Click Me</button>
+  <p>Sample Code</p>
+  <xmp><a href="#" class="intextlink">This is a link</a></xmp>
+  <p>CSS Selector</p>
+  <p>.navbutton, .navbutton:hover, .navbutton:focus</p>
+
+  <div style="width:500px; border:1px solid gray;"></div>
+
+  <h4>Submit and reset button</h4>
+  <p>Rendered Element</p>
+  <button class="subbutton">Sumbit</button><button type="button">Reset</button>
+  <p>Sample Code</p>
+  <xmp><button type="button">Sumbit</button> <button type="button">Reset</button></xmp>
+  <p>CSS Selector</p>
+  <p>.subbutton, .subbutton:hover, .subbutton:focus</p>
+  
+  <div style="width:500px; border:1px solid gray;"></div>
+
+  <h4>Text input field and label</h4>
+  <p>Rendered Element</p>
+  <div class="textinput">Search:<input type="text" value=""></div> 
+  <p>Sample Code</p>
+  <xmp><div class="textinput">Search:<input type="text" value=""></div> </xmp>
+  <p>CSS Selector</p>
+  <p>.textinput</p>
+
+ <div style="width:500px; border:1px solid gray;"></div>
+
+  <h4>Website colour swatches</h4>
+  <p>Rendered Element</p>
+  <canvas id="color1"></canvas>
+  <canvas id="color2"></canvas>
+  <canvas id="color4"></canvas>
+  <canvas id="color3"></canvas>
+  <script>
+    var c = document.getElementById("color1");
+    var ctx = c.getContext("2d");
+    ctx.font = "22px Verdana";
+    ctx.fillText("Beige",110,50)
+    ctx.fillText("Hex: #f5edce",70,80)
+    ctx.fillText("rgb(245,237,206)",50,110)
+  </script>
+  <script>
+    var c = document.getElementById("color2");
+    var ctx = c.getContext("2d");
+    ctx.font = "22px Verdana";
+    ctx.fillText("Pear",120,50)
+    ctx.fillText("Hex: #e9f2bd",70,80)
+    ctx.fillText("rgb(233,242,189)",50,110)
+  </script>
+  <script>
+    var c = document.getElementById("color3");
+    var ctx = c.getContext("2d");
+    ctx.font = "22px Verdana";
+    ctx.fillText("Black",120,50)
+    ctx.fillText("Hex: #e9f2bd",70,80)
+    ctx.fillText("rgb(233,242,189)",50,110)
+  </script>
+  <script>
+    var c = document.getElementById("color4");
+    var ctx = c.getContext("2d");
+    ctx.font = "22px Verdana";
+    ctx.fillText("Amber",120,50)
+    ctx.fillText("Hex: #e9f2bd",70,80)
+    ctx.fillText("rgb(233,242,189)",50,110)
+  </script>
+
+  <p>Sample Code</p>
+  <xmp><canvas id="color1"></canvas></xmp>
+  <xmp><script>
+    var c = document.getElementById("color1");
+    var ctx = c.getContext("2d");
+    ctx.font = "22px Verdana";
+    ctx.fillText("Beige",110,50)
+    ctx.fillText("Hex: #f5edce",70,80)
+    ctx.fillText("rgb(245,237,206)",50,110)
+  </script></xmp>
+  <p>CSS Selector</p>
+  <p>#color1</p>
+
+
+  <br><br>
+  <p><h3>TEXT STYLING</h3></p>
+
+  <h4>Heading</h4>
+  <p>Rendered Element</p>
+  <h3 class="h3">heading in h3</h3> <h4>heading in h4</h4> <h5>heading in h5</h5>
+  <p>Sample Code</p>
+  <xmp><h3 class="h3">heading in h3</h3> <h4>heading in h4</h4> <h5>heading in h5</h5></xmp>
+  <p>CSS Selector</p>
+  <p>.h3</p>
+  
+  <div style="width:500px; border:1px solid gray;"></div>
+
+  <h4>Paragraph</h4>
+  <p>Rendered Element</p>
+  <p class="para">This is a paragraph.</p>
+  <p>Sample Code</p>
+  <xmp><p class="para">This is a paragraph.</p></xmp>
+  <p>CSS Selector</p>
+  <p>.para</p>
+
+  <div style="width:500px; border:1px solid gray;"></div>
+
+  <h4>Bulletted list</h4>
+  <p>Rendered Element</p>
+  <ul><li>update</li><li>contact</li><li>infromation</li></ul>
+  <p>Sample Code</p>
+  <xmp><ul><li>update</li><li>contact</li><li>infromation</li></ul></xmp>
+  <p>CSS Selector</p>
+  <p>.bulletlist, .bulletlist ul, .bulletlist li</p>
+
+  <div style="width:500px; border:1px solid gray;"></div>
+
+  <h4>Numbered lists</h4>
+  <p>Rendered Element</p>
+  <ol><li>update</li><li>contact</li><li>infromation</li></ol>
+  <p>Sample Code</p>
+  <xmp><ul><li>update</li><li>contact</li><li>infromation</li></ul></xmp>
+  <p>CSS Selector</p>
+  <p>.numberlist, .numberlist ul, .numberlist li</p>
+
+
+  <br><br>
+  <p><h3>MODULAR PATTERN ELEMENTS</h3></p>
+
+  <h4>Main navigation module</h4>
+  <h1 class="brandname">ALLECHE</h1>
+  <h4 class="location">london</h4>
+
+  <div class="navi">
+    <ul> 
+     <li><a href="#">WHAT'S NEW</a></li> 
+      <li><a href="#">SCENT & PRODUCTS</a></li> 
+      <li><a href="#">GIFTS</a></li> 
+      <li><a href="#">CONTACT</a></li> 
+      <li><a href="#">ABOUT US</a></li>
+    </ul> 
+  </div>
+  <img class="cover" src="c.jpg" alt="">
+  
+  <p>Sample Code</p>
+  <xmp><h4>Main navigation module</h4>
+  <h1 class="brandname">ALLECHE</h1>
+  <h4 class="location">london</h4>
+
+  <div class="navi">
+    <ul> 
+     <li><a href="#">WHAT'S NEW</a></li> 
+      <li><a href="#">SCENT & PRODUCTS</a></li> 
+      <li><a href="#">GIFTS</a></li> 
+      <li><a href="#">CONTACT</a></li> 
+      <li><a href="#">ABOUT US</a></li>
+    </ul> 
+    <img class="cover" src="c.jpg" alt="" width=700px></xmp>
+  </div>
+
+  
+  <p>CSS Selector</p>
+  <p>.brandname, .location,.navi,.navi:li,.navi:a</p>
+
+  <div style="width:500px; border:1px solid gray;"></div>
+
+  <h4>Product listing</h4>
+  <section>
+     <div class="item"> 
+        <img src="timg.jpg" alt="" height="240" width="200"> 
+        <h5>Nectarine Blossom & Honey</h5> 
+        <h6 class="price">$70 - $140</h6>
+     </div>
+     <div class="item"> 
+        <img src="timg-2.jpg" alt="" height="240" width="200"> 
+        <h5>Orange Blossom</h5> 
+        <h6 class="price">$75 - $150</h6>
+     </div>
+     <div class="item"> 
+        <img src="t5.jpg" alt="" height="240" width="200"> 
+        <h5>Wild Bluebell</h5> 
+        <h6 class="price">$85 - $170</h6>
+     </div>
+    </section>
+  <p>Sample Code</p>
+  <xmp> 
+    <div class="item"> 
+        <img src="timg.jpg" alt="" height="240" width="200"> 
+        <h5>Nectarine Blossom & Honey</h5> 
+        <h6 class="price">$70 - $140</h6>    
+    </div>
+   </xmp>
+  <p>CSS Selector</p>
+  <p>.item</p>
+
+  <div style="width:500px; border:1px solid gray;"></div>
+
+  <h4>Website grid structure</h4>
+  <div class="container">
+    <div class="photo"><p>cover page photo</p></div><br>
+    <div class="six">
+      <div class="s"><p>navi</p></div>
+      <div class="s"><p>navi</p></div>
+      <div class="s"><p>navi</p></div>
+      <div class="s"><p>navi</p></div>
+      <div class="s"><p>navi</p></div>
+      <div class="s"><p>navi</p></div>
+      <br><br><br>
+      <div class="t"></div>
+      <div class="t"><p>brand name</p></div>
+      <div class="t"></div>
+      <br><br><br>
+      <div class="t" style="width: 19%;"></div>
+      <div class="t" style="width: 60%;"><p>text</p></div>
+      <div class="t" style="width: 19%"></div>
+      <br><br><br>
+      <div class="t" style="width: 19%"></div>
+      <div class="t" style="width: 30%"><p>image</p></div>
+      <div class="t" style="width: 30%"><p>image</p></div>
+      <div class="t" style="width: 19%"></div>
+      <br><br><br>
+      <div class="t" style="width: 40%"><p>product listing</p></div>
+      <div class="t" style="width: 40%"><p>product listing</p></div>
+      <div class="six" style="flex-wrap: nowrap;">
+        <div class="t" style="width: 31%"><p>price</p></div>
+        <div class="t" style="width: 0.5%"></div>
+        <div class="t" style="width: 31%"><p>price</p></div>
+      </div>
+    </div>
+    <br>
+    <div class="six" style="flex-wrap: nowrap;">
+      <div class="t" style="width: 14%;background-color: white"></div>
+      <div class="t" style="width: 35%;"><p>prodect image</p></div>
+      <div class="t" style="width: 35%;"><p>product description</p></div>
+      <div class="t" style="width: 14%;background-color: white"></div>
+    </div>
+    <br>
+    <div class="six" style="flex-wrap: nowrap;">
+      <div class="t" style="width: 14%; background-color: white"></div>
+      <div class="t" style="width: 20%;"><p>profile photo</p></div>
+      <div class="t" style="width: 50%;"><p>custumore review</p></div>
+      <div class="t" style="width: 14%;background-color: white"></div>
+    </div>
+  </div>
+  <br>
+  <p>Sample Code</p>
+  <xmp><div class="container">
+    <div class="photo"><p>cover page photo</p></div><br>
+    <div class="six">
+      <div class="s"><p>navi</p></div>
+      <div class="s"><p>navi</p></div>
+      <div class="s"><p>navi</p></div>
+      <div class="s"><p>navi</p></div>
+      <div class="s"><p>navi</p></div>
+      <div class="s"><p>navi</p></div>
+      <br><br><br>
+      <div class="t"></div>
+      <div class="t"><p>brand name</p></div>
+      <div class="t"></div>
+      <br><br><br>
+      <div class="t" style="width: 19%;"></div>
+      <div class="t" style="width: 60%;"><p>text</p></div>
+      <div class="t" style="width: 19%"></div>
+      <br><br><br>
+      <div class="t" style="width: 19%"></div>
+      <div class="t" style="width: 30%"><p>image</p></div>
+      <div class="t" style="width: 30%"><p>image</p></div>
+      <div class="t" style="width: 19%"></div>
+      <br><br><br>
+      <div class="t" style="width: 40%"><p>product listing</p></div>
+      <div class="t" style="width: 40%"><p>product listing</p></div>
+      <div class="six" style="flex-wrap: nowrap;">
+        <div class="t" style="width: 31%"><p>price</p></div>
+        <div class="t" style="width: 0.5%"></div>
+        <div class="t" style="width: 31%"><p>price</p></div>
+      </div>
+    </div>
+    <br>
+    <div class="six" style="flex-wrap: nowrap;">
+      <div class="t" style="width: 14%;background-color: white"></div>
+      <div class="t" style="width: 35%;"><p>prodect image</p></div>
+      <div class="t" style="width: 35%;"><p>product description</p></div>
+      <div class="t" style="width: 14%;background-color: white"></div>
+    </div>
+    <br>
+    <div class="six" style="flex-wrap: nowrap;">
+      <div class="t" style="width: 14%; background-color: white"></div>
+      <div class="t" style="width: 20%;"><p>profile photo</p></div>
+      <div class="t" style="width: 50%;"><p>custumore review</p></div>
+      <div class="t" style="width: 14%;background-color: white"></div>
+    </div>
+  </div></xmp>
+  <p>CSS Selector</p>
+  <p>.container, .photo, .photo p, .six, .six .s, .six p, .six .t</p>
+  <div style="width:500px; border:1px solid gray;"></div>
+
+  <h4>Product Review form</h4>
+  <div style="height: 300px">
+    <div class="photo" style="height: 60px;"><br><p>custumor review</p></div><br>
+    
+    <div class="six" style="flex-wrap: nowrap">
+      <div class="t" style="width: 14%; background-color: white"></div>
+      <div class="t" style="width: 20%;"><img src="cus.jpeg" width="185" height="175">
+        <h5>Kahty zhang</h5s></div>
+      <div class="t" style="width: 50%;background-color: white"><p>rating: # # # # #</p>
+        <p>I like it very much. It smells super good. Hightly recommend!</p></div>
+      <div class="t" style="width: 14%;background-color: white"></div>
+    </div>
+  </div>
+
+  <p>Sample Code</p>
+  <xmp><div class="photo" style="height: 60px;"><br><p>custumor review</p></div><br>
+    
+    <div class="six" style="flex-wrap: nowrap">
+      <div class="t" style="width: 14%; background-color: white"></div>
+      <div class="t" style="width: 20%;"><img src="cus.jpeg" width="185" height="175">
+        <p>Kahty zhang</p></div>
+      <div class="t" style="width: 50%;"><p>rating: # # # # #</p>
+        <p>I like it very much. It smells super good. Hightly recommend!</p></div>
+      <div class="t" style="width: 14%;background-color: white"></div>
+    </div></xmp>
+  
+  <p>CSS Selector</p>
+  <p>.photo, .photo p, .six, .six .t</p>
+ </body>
+</html>
