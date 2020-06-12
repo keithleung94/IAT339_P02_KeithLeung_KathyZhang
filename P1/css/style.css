@@ -15,14 +15,16 @@ h3, h4, h5 {
 	font-weight: 500;
 }
 
+/*END OF FONT FORMATTING*/
+
 .divider{
 	width: 35rem;
 	border: 1px solid grey;
 }
 
-
-
-/*END OF FONT FORMATTING*/
+section {
+	margin: 3rem 2rem;
+}
 
 .container{
 	width: 100%;
