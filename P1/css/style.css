@@ -1,0 +1,114 @@
+body{
+	font-family: 'Cinzel', sans-serif;
+}
+
+.container{
+	width: 100%;
+	height: 600px;
+	background-color: white;
+	line-height: 20px;
+}
+.photo{
+	width: 90%;
+	background-color: #eee;
+	margin: auto;
+}
+
+.photo p{
+	text-align: center;
+}
+
+.six{
+	width: 90%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.six .s{
+	background-color: #eee;
+	height: 50px;
+	width: 16.3%;
+}
+.six p{
+	text-align: center;
+}
+
+.six .t{
+	background-color: #eee;
+	height: 50px;
+	width: 33%;
+}
+
+#color1{
+	width: 150px;
+	height: 100px;
+	background-color: rgb(245,237,206);
+}
+#color2{
+	width: 150px;
+	height: 100px;
+	background-color: rgb(233,242,189);
+}
+#color3{
+	width: 150px;
+	height: 100px;
+	background-color: rgb(34,35,36);
+}
+#color4{
+	width: 150px;
+	height: 100px;
+	background-color: rgb(240,219,151);
+}
+
+
+.item{
+	display: inline-block;
+	padding-left: 100px;
+}
+
+.price{
+	color: gray;
+}
+
+.brandname{
+	text-align:center;
+	font-family: cinzel;
+	font-weight: lighter;
+	line-height: 0.3;
+	letter-spacing: 1.2px;
+}
+
+.location{
+	text-align:center;
+	font-family: cinzel;
+	font-weight: lighter;
+	line-height: 0;
+	letter-spacing: 0.1px;
+}
+
+.navi{
+	float: left;
+    height: 60px;
+    margin: auto;
+}
+.navi li{
+	font-family: cinzel;
+	float: left;
+	padding-bottom:30px;
+	padding-left: 30px;
+	list-style-type: none;
+}
+
+.navi a{
+	line-height:50px;
+	text-decoration: none;
+	color: gray;
+	text-align: center;
+}
+
+.cover{
+	width: 90%;
+	margin: auto;
+}
