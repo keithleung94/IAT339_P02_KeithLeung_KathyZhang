@@ -80,7 +80,45 @@ h3, h4, h5 {
 
 /*SWATCH FORMATTING*/
 
-/*END OF BUTTON FORMATTING*/
+.swatch {
+	border: dotted 1px;
+	padding: 2rem;
+	display: inline-block;
+}
+
+.beigeswatch {
+	background-color: #f5edce;
+	display:block;
+	width: 12rem;
+	height: 12rem;
+}
+.pearswatch {
+	background-color: #e9f2bd;
+	display:block;
+	width: 12rem;
+	height: 12rem;
+}
+.amberswatch {
+	background-color: #f0db97;
+	display:block;
+	width: 12rem;
+	height: 12rem;
+}
+.blackswatch {
+	background-color: #000000;
+	display:block;
+	width: 12rem;
+	height: 12rem;
+}
+.whiteswatch {
+	background-color: #ffffff;
+	display:block;
+	width: 12rem;
+	height: 12rem;
+	border: solid 1px;
+}
+
+/*END OF SWATCH FORMATTING*/
 
 .divider{
 	width: 35rem;
