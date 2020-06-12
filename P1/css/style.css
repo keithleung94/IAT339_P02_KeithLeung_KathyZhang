@@ -1,6 +1,28 @@
+/*FONT FORMATTING*/
+
+
+
 body{
-	font-family: 'Cinzel', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
+
+h1, h2 {
+	font-family:'Cinzel', serif;
+	font-weight: 700;
+}
+
+h3, h4, h5 {
+	font-weight: 500;
+}
+
+.divider{
+	width: 35rem;
+	border: 1px solid grey;
+}
+
+
+
+/*END OF FONT FORMATTING*/
 
 .container{
 	width: 100%;
