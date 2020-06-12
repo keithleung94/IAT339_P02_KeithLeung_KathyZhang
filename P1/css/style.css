@@ -1,7 +1,5 @@
 /*FONT FORMATTING*/
 
-
-
 body{
 	font-family: 'Montserrat', sans-serif;
 }
@@ -16,6 +14,73 @@ h3, h4, h5 {
 }
 
 /*END OF FONT FORMATTING*/
+
+
+/*LINK FORMATTING*/
+.navlink{
+ text-decoration: none;
+ outline: none;
+ color: black;
+ padding: 0.75rem;
+ margin: 0.25rem;
+}
+
+.navlink:hover, .navlink:focus{
+ border:1px solid  #999999 ;
+}
+
+.navlink:active{
+ text-decoration: underline;
+}
+
+.intextlink{
+	color:inherit;
+}
+
+.intextlink:hover, .intextlink:focus{
+	color: grey;
+}
+
+.intextlink:active{
+	color: inherit;
+}
+
+/*END OF LINK FORMATTING*/
+
+/*BUTTON FORMATTING*/
+.submitbutton{
+ border: none;
+ background-color: black;
+ padding: 1rem 2rem;
+ color: white;
+ border-radius: 4px;
+ margin-right: 1rem;
+}
+.submitbutton:hover{
+ border: black;
+ background-color: #404040;
+ color: white;
+}
+
+.submitbutton:active{
+ border: solid;
+}
+
+.resetbutton{
+	border: solid 0.5px;
+  background-color: white;
+  padding: 1rem 2rem;
+  color: black;
+  border-radius: 4px;
+  margin-right: 1rem;
+}
+
+/*END OF BUTTON FORMATTING*/
+
+
+/*SWATCH FORMATTING*/
+
+/*END OF BUTTON FORMATTING*/
 
 .divider{
 	width: 35rem;
