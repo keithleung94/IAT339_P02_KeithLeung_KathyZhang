@@ -36,6 +36,11 @@ h1{
 	color: inherit;
 }
 
+.navlink {
+	padding: 0% 1%;
+	float: center;
+}
+
 .h3{
  font-family: 'Montserrat',sans-serif;
 }
