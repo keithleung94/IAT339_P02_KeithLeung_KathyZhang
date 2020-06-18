@@ -25,6 +25,17 @@ h1{
 	font-size: 3rem;
 }
 
+.logo {
+	display: inline-block;
+	padding: 1% 2%;
+	margin: 2% 0%;
+	border: solid 3px black;
+}
+
+.logolink {
+	color: inherit;
+}
+
 .h3{
  font-family: 'Montserrat',sans-serif;
 }
