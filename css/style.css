@@ -21,6 +21,10 @@ body{
 	text-align: center;
 }
 
+h1{
+	font-size: 3rem;
+}
+
 .h3{
  font-family: 'Montserrat',sans-serif;
 }
@@ -146,8 +150,8 @@ body{
 }
 
 .text{
-	position:absolute; 
-	left:45%; 
+	position:absolute;
+	left:45%;
 	top:15%;
 }
 
@@ -203,9 +207,9 @@ li {
 	top: 33px;
 }
 
-a{text-decoration:none} 
+a{text-decoration:none}
 
-a:hover{text-decoration:none} 
+a:hover{text-decoration:none}
 
 .dropdown_1column {
 	/* 下拉菜单边框颜色*/
@@ -373,7 +377,7 @@ a:hover{text-decoration:none}
 }
 
 .butt1{
-	
+
 	justify-content: center;
 	width: 40%;
 	height: 7%;
@@ -395,7 +399,7 @@ a:hover{text-decoration:none}
 	transform: translate(-50%, -50%);
 	display: flex;
 	flex-flow: row;
-	
+
 }
 
 .con1left {
@@ -483,4 +487,3 @@ a:hover{text-decoration:none}
 	padding: 10px;
 	color: white;
 }
-
