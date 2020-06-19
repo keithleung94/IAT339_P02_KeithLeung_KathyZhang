@@ -165,6 +165,31 @@ h3{
 	margin: 2% auto;
 }
 
+.contact_box{
+	display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  flex-wrap: -webkit-flex;
+  flex-wrap: -ms-flex;
+  flex-wrap: wrap;
+}
+
+.contact_image_box_item{
+	flex: 1 1 auto;
+}
+
+.contact_image{
+	max-width: 25%;
+}
+
+.contact_text_box_item{
+	flex: 1 1 auto;
+}
+
+
+
+
 
 #content {
 	padding: 0px;
@@ -404,21 +429,6 @@ a:hover{text-decoration:none}
 	background-color: darkgrey;
 }
 
-.order {
-	height: 60px;
-	line-height: 60px;
-	text-align: center;
-}
-
-.order .line {
-	display: inline-block;
-	width: 150px;
-	border-top: 1px solid #ccc;
-}
-
-.order .txt {
-	vertical-align: -4px;
-}
 
 .container {
 	justify-content: center;
@@ -484,42 +494,10 @@ a:hover{text-decoration:none}
 	/*background: yellow;
 */
 }
-.container2 {
-	justify-content: center;
-	width: 40%;
-	height: 30%;
-	position: absolute;
-	left: 60%;
-	top: 65%;
-	transform: translate(-50%, -50%);
-	display: flex;
-	flex-flow: row;
-}
 
-.left2 {
-	width: 20%;
-	height: 100%;
-}
 
-.right2 {
-	margin-left: 30px;
-	margin-top: 50px;
-	width: 80%;
-	height: 70%;
-}
 
-.butt1{
 
-	justify-content: center;
-	width: 40%;
-	height: 7%;
-	position: absolute;
-	left: 70%;
-	top: 85%;
-	transform: translate(-50%, -50%);
-	display: flex;
-	flex-flow: row;
-}
 
 .con1 {
 	justify-content: center;
