@@ -209,7 +209,7 @@ h3{
 	max-width: 30%;
 }
 
-.customer_reviews{
+.customer_reviews_box{
 	display: -webkit-flex;
 	display: -ms-flex;
 	display: flex;
@@ -222,8 +222,55 @@ h3{
 }
 
 .customer_review_header{
-	width: 100%;
+	flex: 1 1 auto;
+	flex-basis: 100%;
 	background-color: #f5edce;
+	margin-bottom: 3%;
+}
+
+.customer_image_box{
+	flex: 1 1 auto;
+	max-width: 25%;
+	margin: 0 auto;
+}
+
+.customer_image{
+	width: 35%;
+	margin-bottom: 3%;
+}
+
+.customer_text_box{
+	flex: 1 1 auto;
+	max-width: 40%;
+	margin: 0 auto;
+}
+
+.review_title{
+	text-align: left;
+	margin-bottom: 3%;
+}
+
+.review_body{
+	text-align: left;
+}
+
+.addtocart_button{
+ border: none;
+ background-color: black;
+ padding: 1rem 2rem;
+ color: white;
+ border-radius: 4px;
+ margin-top: 1%;
+}
+
+.addtocart_button:hover{
+ border: black;
+ background-color: #404040;
+ color: white;
+}
+
+.addtocart_button:active{
+ border: solid 1px;
 }
 
 #content {
