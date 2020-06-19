@@ -45,6 +45,7 @@ h4{
 	float: center;
 	color: black;
 	line-height: 45px;
+	display: inline-block;
 }
 
 .navlink{
@@ -83,6 +84,55 @@ a {
 	text-align: center;
 	margin: 0 auto 3% auto;
 }
+
+.productline_intro{
+	max-width: 50%;
+	text-align: center;
+	margin: 3% auto 4% auto;
+	padding: 2%;
+}
+
+h3{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.whats_new{
+	display: inline-block;
+	padding: 0.3rem 1rem;
+	border: solid 1px grey;
+	margin-bottom: 1rem;
+}
+
+#box1 {
+	margin-top: 40px;
+}
+
+#product_box {
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	flex-wrap: -webkit-flex;
+	flex-wrap: -ms-flex;
+	flex-wrap: wrap;
+}
+
+#product_box_item {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+  margin: 0.5rem 2rem;
+}
+
+#box_space{
+	flex: 1 0 auto;
+}
+
+.product_text{
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+
 
 #content {
 	padding: 0px;
@@ -183,7 +233,7 @@ a {
 	margin-left: 25px;
 }
 
-#JO_list {
+#navbar {
 	display: block;
 	white-space: nowrap;
 	width: 100%;
@@ -192,11 +242,6 @@ a {
 	padding: 0;
 }
 
-#JO_list li {
-	height: 30px;
-	margin: 3px;
-	display: inline-block;
-}
 
 .img {
 	width: 1152px;
