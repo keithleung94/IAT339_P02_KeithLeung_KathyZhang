@@ -207,18 +207,23 @@ h2, h3, p{
 	flex-wrap: -webkit-flex;
 	flex-wrap: -ms-flex;
 	flex-wrap: wrap;
+
+	justify-content: center;
+	margin: 3% auto;
 }
 
 .detailed_product_image_box{
 	flex: 1 1 auto;
+	max-width: 30%;
 }
 
 .detailed_product_text_box{
 	flex: 1 1 auto;
+	max-width: 30%;
 }
 
 .product_image_1{
-	max-width: 30%;
+	width; 75%;
 }
 
 .customer_reviews_box{
@@ -272,7 +277,10 @@ h2, h3, p{
  padding: 1rem 2rem;
  color: white;
  border-radius: 4px;
- margin-top: 1%;
+ margin-top: 5%;
+ font-family: 'Montserrat', sans-serif;
+ font-size: 1rem;
+ font-weight: 500;
 }
 
 .addtocart_button:hover{
