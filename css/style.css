@@ -187,9 +187,44 @@ h3{
 	flex: 1 1 auto;
 }
 
+.detailed_product_box{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
 
+	flex-wrap: -webkit-flex;
+	flex-wrap: -ms-flex;
+	flex-wrap: wrap;
+}
 
+.detailed_product_image_box{
+	flex: 1 1 auto;
+}
 
+.detailed_product_text_box{
+	flex: 1 1 auto;
+}
+
+.product_image_1{
+	max-width: 30%;
+}
+
+.customer_reviews{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	flex-wrap: -webkit-flex;
+	flex-wrap: -ms-flex;
+	flex-wrap: wrap;
+
+	margin-top: 3%;
+}
+
+.customer_review_header{
+	width: 100%;
+	background-color: #f5edce;
+}
 
 #content {
 	padding: 0px;
