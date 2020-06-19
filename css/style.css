@@ -125,10 +125,6 @@ h2, h3, p{
 	max-width: 35%;
 }
 
-#box_space{
-	flex: 1 0 auto;
-}
-
 .product_text{
 	font-family: 'Montserrat', sans-serif;
 }
