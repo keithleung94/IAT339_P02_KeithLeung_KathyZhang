@@ -131,7 +131,39 @@ h3{
 	font-family: 'Montserrat', sans-serif;
 }
 
+.how_we_started{
+	display: table;
+	margin: 3% auto;
+}
 
+.decoration_line_left{
+	float:center;
+	width: 35%;
+	margin-left: auto;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.decoration_line_right{
+	float:center;
+	width: 35%;
+	margin-right: auto;
+	display: table-cell;
+	vertical-align: middle;
+}
+.how_we_started_text{
+	display: table-cell;
+
+}
+
+.about_us_image{
+	max-width: 50%;
+}
+
+.about_us_text{
+	max-width: 75%;
+	margin: 2% auto;
+}
 
 
 #content {
