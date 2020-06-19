@@ -92,7 +92,7 @@ a {
 	padding: 2%;
 }
 
-h3{
+h2, h3, p{
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -115,12 +115,14 @@ h3{
 	flex-wrap: -webkit-flex;
 	flex-wrap: -ms-flex;
 	flex-wrap: wrap;
+
+	justify-content: center;
 }
 
 #product_box_item {
   flex: 1 1 auto;
-  padding: 1rem 1rem;
-  margin: 0.5rem 2rem;
+  margin: 2rem 2rem;
+	max-width: 35%;
 }
 
 #box_space{
@@ -165,6 +167,11 @@ h3{
 	margin: 2% auto;
 }
 
+.contact_us_header{
+	max-width: 35%;
+	margin: 3% auto;
+}
+
 .contact_box{
 	display: -webkit-flex;
   display: -ms-flex;
@@ -173,18 +180,27 @@ h3{
   flex-wrap: -webkit-flex;
   flex-wrap: -ms-flex;
   flex-wrap: wrap;
+
+	align-items: center;
+	justify-content: center;
 }
 
 .contact_image_box_item{
 	flex: 1 1 auto;
+	max-width: 30%;
 }
 
 .contact_image{
-	max-width: 25%;
+	width: 80%;
 }
 
 .contact_text_box_item{
 	flex: 1 1 auto;
+	max-width: 30%;
+}
+
+.contact_info{
+	margin: auto auto;
 }
 
 .detailed_product_box{
