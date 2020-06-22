@@ -242,6 +242,8 @@ h2, h3, p{
 .detailed_product_text_box{
 	flex: 1 1 auto;
 	max-width: 30%;
+	text-align: justify;
+	line-height: 25px;
 }
 
 .product_image_1{
