@@ -169,7 +169,8 @@ h2, h3, p{
 }
 
 .contact_box{
-	display: -webkit-flex;
+	margin: 70px;
+  display: -webkit-flex;
   display: -ms-flex;
   display: flex;
 
