@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="{CHARSET}">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+	</head>
+
+	<body>
+		<a class="logolink" href="index.html">
+			<div class="logo">
+				<h1>ALLECHE</h1>
+				<h4>LONDON</h4>
+			</div>
+		</a>
+		<nav id="navbar">
+			<ul>
+					<li class="navlink_listitem">
+						<a href="product.html" class="navlink">
+							<h4>WHAT'S NEW</h4></a>
+					</li>
+					<li class="navlink_listitem">
+						<a href="product.html" class="navlink">
+							<h4>SCENTS&PRODUCTS</h4></a>
+					</li>
+					<li class="navlink_listitem">
+						<a href="#"  class="navlink">
+							<h4>GIFTS</h4></a>
+					</li>
+					<li class="navlink_listitem">
+						<a href="infor.html" class="navlink">
+							<h4>ABOUT US</h4></a>
+					</li>
+					<li class="navlink_listitem">
+						<a href="contact.html" class="navlink">
+							<h4>CONTACT</h4></a>
+					</li>
+			</ul>
+		</nav>
+
+		<div class="detailed_product_box">
+			<div class="detailed_product_image_box">
+				<img src="img/t5.jpg" alt="product image" class="product_image_1">
+			</div>
+			<div class="detailed_product_text_box">
+				<h3 class>WATERLILY</h3>
+				<br>
+				<p>Lines of information Lines of information </p>
+				<p>Lines of information Lines of information </p>
+				<p>Lines of information Lines of information </p>
+
+				<br>
+				<form method="post" action="text.php">
+				<select>
+					<option value="basketball" selected="selected">$130.00 30ML</option>
+					<option value="football">$174.00 150ML</option>
+					<option value="voleyball">$194.00 200ML</option>
+					<option value="tennis">$314.00 300ML</option>
+				</select>
+				<br>
+
+				<button type="button" class="addtocart_button"> Add to cart </button>
+			</div>
+		</div>
+
+		<div class="customer_reviews_box">
+			<div class="customer_review_header">
+				<h2>Customer Reviews</h2>
+			</div>
+			<div class="customer_image_box">
+				<img src="img/cus.jpeg" alt="customer image" class="customer_image">
+				<h3>Customer Username</h3>
+			</div>
+			<div class="customer_text_box">
+				<div class="customer_review_text">
+					<h4 class="review_title">Title of review</h4>
+					<p class="review_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="customer_reviews_box">
+			<div class="customer_image_box">
+				<img src="img/cus.jpeg" alt="customer image" class="customer_image">
+				<h3>Customer Username</h3>
+			</div>
+			<div class="customer_text_box">
+				<div class="customer_review_text">
+					<h4 class="review_title">Title of review</h4>
+					<p class="review_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="customer_reviews_box">
+			<div class="customer_image_box">
+				<img src="img/cus.jpeg" alt="customer image" class="customer_image">
+				<h3>Customer Username</h3>
+			</div>
+			<div class="customer_text_box">
+				<div class="customer_review_text">
+					<h4 class="review_title">Title of review</h4>
+					<p class="review_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+			</div>
+		</div>
+
+
+	</body>
+
+</html>
