@@ -21,6 +21,23 @@ body{
 	text-align: center;
 }
 
+.bow{
+	width:15% auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.bow1{
+	width:15% auto;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+}
+
+
 h1{
 	font-size: 3rem;
 }
@@ -73,10 +90,11 @@ a {
 	border: none;
 	background-color: black;
 	padding: 10px;
-	margin: 2% auto;
+	margin:  2% auto;
 	color: white;
 	font-family: "Cinzel", serif;
 	font-size: 1.25rem;
+	line-height: 100px;
 }
 
 .brandintro{
