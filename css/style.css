@@ -159,8 +159,10 @@ h2, h3, p{
 }
 
 .about_us_text{
-	max-width: 75%;
-	margin: 2% auto;
+	max-width: 50%;
+	margin: 5% auto;
+	line-height: 25px;
+	text-align: justify;
 }
 
 .contact_us_header{
