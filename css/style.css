@@ -37,7 +37,10 @@ body{
 	z-index: 1;
 }
 
-
+.banner{
+	 width:30%;
+	margin:  2%; white;
+}
 h1{
 	font-size: 3rem;
 }
