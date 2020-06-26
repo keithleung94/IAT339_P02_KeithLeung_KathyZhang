@@ -14,7 +14,7 @@
 	<body>
 		<img class="bow" src="img/bow.png">
 		<img class="bow1" src="img/bow1.png">
-		
+
 		<a class="logolink" href="index.html">
 			<div class="logo">
 				<h1>ALLECHE</h1>
@@ -46,173 +46,69 @@
 			</ul>
 		</nav>
 
-		<!--存放图片、按钮、导航点-->
-		<div id="content" class="conClass">
-			<!--图片-->
-			<img src="img/COVER1.jpg" class="imgshow" />
-			<img src="img/COVER.jpg" class="imgshow" />
-			<img src="img/COVER2.jpg" class="imgshow" />
-			<img src="img/COVER.jpg" class="imgshow" />
-			<img src="img/COVER1.jpg" class="imgshow" />
-			<img src="img/COVER2.jpg" class="imgshow" />
-			<div id="left">&lt;</div>
-			<div id="right">&gt;</div>
-			<div id="nav">
-				<div class="divshow"></div>
-				<div class="divhide"></div>
-				<div class="divhide"></div>
-				<div class="divhide"></div>
-				<div class="divhide"></div>
-				<div class="divhide"></div>
-			</div>
-		</div>
+		<section class="carousel" aria-label="Gallery">
+  <ol class="carousel__viewport">
+    <li id="carousel__slide1"
+        tabindex="0"
+        class="carousel__slide">
+				<img class="carousel_image" src="img/COVER.jpg" style="width:100%">
+      <div class="carousel__snapper">
+        <a href="#carousel__slide3"
+           class="carousel__prev">Go to last slide</a>
+        <a href="#carousel__slide2"
+           class="carousel__next">Go to next slide</a>
+      </div>
+    </li>
+    <li id="carousel__slide2"
+        tabindex="0"
+        class="carousel__slide">
+				<img class="carousel_image" src="img/COVER1.jpg" style="width:100%">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide1"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide3"
+         class="carousel__next">Go to next slide</a>
+    </li>
+    <li id="carousel__slide3"
+        tabindex="0"
+        class="carousel__slide">
+				<img class="carousel_image" src="img/COVER2.jpg" style="width:100%">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide2"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide1"
+         class="carousel__next">Go to next slide</a>
+    </li>
+  </ol>
+  <aside class="carousel__navigation">
+    <ol class="carousel__navigation-list">
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide1"
+           class="carousel__navigation-button">Go to slide 1</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide2"
+           class="carousel__navigation-button">Go to slide 2</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide3"
+           class="carousel__navigation-button">Go to slide 3</a>
+      </li>
+    </ol>
+  </aside>
+</section>
+
 		<a href="product.html" class="navbutton"> SHOP NOW </a>
 		<div class="brandintro">
-			ALLECHE London is a British perfume and scented candle brand, founded by ALLECHE in 1983. 
+			ALLECHE London is a British perfume and scented candle brand, founded by ALLECHE in 1983.
 			The brand is known for its perfumes, candles, bath products, and room scents.
 		</div>
 
 				<div><img src="img/big.png"></div>
 				<div><img src="img/big1.png"></div>
-				
 
 
-		
 
-		<script type="text/javascript">
-			/*轮播图基本功能：
-			 * 1图片切换
-			 *         1.1图片在中间显示
-			 *         1.2图片淡入淡出
-			 * 2左右各有一个按钮
-			 *         2.1点击左按钮，图片切换上一张
-			 *         2.2点击右按钮，图片切换下一张
-			 *         2.3鼠标滑过按钮，按钮颜色加深
-			 * 3底部的导航点
-			 *         3.1图片为第几张时，点在那第几张
-			 *         3.2鼠标滑到第几个点，图片切换到第几张
-			 * 4图片自动轮播
-			 *         4.1默认自动下一张
-			 *         4.2鼠标在图片范围时，停止切换
-			 *         4.3鼠标离开图片范围，恢复自动切换
-			 * 5鼠标放在图片范围时，变为小手样式
-			 */
-			/*实现思路
-			 * 所有图片在同一位置
-			 * 一张图片展示，其余图片隐藏
-			 */
-			//创建一个变量来存放当前图片的位置(索引位置)
-			var showindex = 0;
-			//定时器调用的方法
-			function timershow() {
-				/*样式切换图片
-				var index=$("img").index($(".imgshow"));
-				//隐藏当前图片
-				$("img").eq(index).removeClass("imgshow").addClass("imghide");
-				if(index==5){
-				    index=-1
-				}
-				$("img").eq(index+1).removeClass("imghide").addClass("imgshow");
-				*/
-				var imageindex = showindex;
-				//点击按钮，下标向后移动
-				showindex++;
-				//切换到第一张图片，showindex改为0
-				if(showindex == 6) {
-					showindex = 0
-				}
-				//返回当前图片的位置
-				//console.log(imageindex);
-				//上一张图片淡出
-				$("img").eq(imageindex).fadeOut(10000);
-				//当前图片淡出
-				$("img").eq((imageindex + 1) % 6).fadeIn(10000);
-				//上一个导航点样式修改为divhide
-				$("#nav div").eq(imageindex).removeClass("divshow").addClass("divhide");
-				//当前导航点样式修改为divshow
-				$("#nav div").eq((imageindex + 1) % 6).removeClass("divhide").addClass("divshow");
-			}
-
-			$(function() {
-				//自动调用方法
-				var timer = setInterval(timershow, 20000);
-				//上一张图片
-				$("#right").click(function() {
-					/*样式切换图片
-					var index=$("img").index($(".imgshow"));
-					//隐藏当前图片
-					$("img").eq(index).removeClass("imgshow").addClass("imghide");
-					if(index==5){
-					    index=-1
-					}
-					$("img").eq(index+1).removeClass("imghide").addClass("imgshow");
-					*/
-					var imageindex = showindex;
-					//点击按钮，下标向后移动
-					showindex++;
-					//切换到第一张图片，showindex改为0
-					if(showindex == 6) {
-						showindex = 0
-					}
-					//返回当前图片的位置
-					console.log(imageindex);
-					//上一张图片淡出
-					$("img").eq(imageindex).fadeOut(1000);
-					//当前图片淡出
-					$("img").eq((imageindex + 1) % 6).fadeIn(1000);
-					//上一个导航点样式修改为divhide
-					$("#nav div").eq(imageindex).removeClass("divshow").addClass("divhide");
-					//当前导航点样式修改为divshow
-					$("#nav div").eq((imageindex + 1) % 6).removeClass("divhide").addClass("divshow");
-				});
-				//下一张图片
-				$("#left").click(function() {
-					console.log("修改前：" + showindex)
-					var imageindex = showindex;
-					//点击按钮，下标向后移动
-					showindex--;
-					//切换到最后一张图片，showindex变为5
-					if(showindex == -1) {
-						showindex = 5;
-					}
-					//上一张图片淡出
-					$("img").eq(imageindex).fadeOut(1000);
-					//当前图片淡出
-					$("img").eq((imageindex - 1) % 6).fadeIn(1000);
-					//上一个导航点样式修改为divhide
-					$("#nav div").eq(imageindex).removeClass("divshow").addClass("divhide");
-					//当前导航点样式修改为divshow
-					$("#nav div").eq((imageindex - 1) % 6).removeClass("divhide").addClass("divshow");
-				});
-				//导航点
-				$("#nav div").mouseover(function() {
-					console.log("修改前" + showindex); //修改前的位置
-					var divindex = $("#nav div").index($(this)); //获取当前鼠标在哪一个点上
-					//选定的为当前的自己则不产生动画效果
-					if(divindex != showindex) {
-						//将以前的点的样式修改成divhide
-						$("#nav div").eq(showindex).removeClass("divshow").addClass("divhide");
-						//将现在的点的样式修改成div
-						$("#nav div").eq(divindex).removeClass("divhide").addClass("divshow");
-						//以前图片淡出
-						$("img").eq(showindex).fadeOut(1000);
-						//新图片淡入
-						$("img").eq(divindex).fadeIn(1000);
-						showindex = divindex;
-						console.log("修改后" + divindex); //修改后的位置
-					}
-				});
-				//鼠标在图片范围时停止切换(清除定时器)
-				$("#content").mouseenter(function() {
-						window.clearInterval(timer);
-					}
-
-				);
-				$("#content").mouseleave(function() {
-					timer = window.setInterval(timershow, 2000);
-				});
-			});
-		</script>
 	</body>
 
 </html>
