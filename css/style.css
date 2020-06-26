@@ -9,6 +9,12 @@
 	}
 }
 
+#navbar {
+	position: relative;
+	display: block;
+	z-index: 2;
+}
+
 * {
 	margin: 0px;
 	text-decoration: none;
@@ -171,6 +177,11 @@ p{
 .product_text{
 	font-family: 'Montserrat', sans-serif;
 }
+
+.product_image{
+	width: 100%;
+}
+
 
 .how_we_started{
 	display: table;
