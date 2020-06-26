@@ -91,48 +91,52 @@ a {
 	color: white;
 	font-family: "Cinzel", serif;
 	font-size: 1.25rem;
+	font-weight: 500;
 	line-height: 100px;
 }
 
 .brandintro{
-	max-width: 30%;
+	max-width: 50%;
 	text-align: center;
 	margin: 0 auto 3% auto;
 }
 
 .productline_intro{
-	max-width: 50%;
 	text-align: center;
-	margin: 3% auto 4% auto;
+	margin: 1% auto 1% auto;
 	padding: 2%;
-	line-height: 50px;
+	line-height: 3rem;
 }
 
 h1{
-	font-size: 4vw;
+	font-size: 3vmax;
 	font-family: "Cinzel", serif;
 }
 
 h2{
-	font-size: 3vw;
+	font-size: 1.5vmax;
 	font-family: 'Montserrat', sans-serif;
 }
 
 h3{
-	font-size: 2vw;
+	font-size: 1.2vmax;
 	font-family: 'Montserrat', sans-serif;
 }
 
 h4{
-	font-size: 1.5vw;
+	font-size: 1vmax;
 	font-family: 'Montserrat', sans-serif;
 }
 
 p{
-	font-size: 1.25vw;
+	font-size: 1vmax;
 	font-family: 'Montserrat', sans-serif;
 }
 
+.frontpage_image_box{
+	width: 50%;
+	margin: 0 auto;
+}
 
 
 .whats_new{
@@ -190,18 +194,27 @@ p{
 }
 .how_we_started_text{
 	display: table-cell;
-
 }
 
 .about_us_image{
-	max-width: 50%;
+	width: 50%;
 }
 
 .about_us_text{
-	max-width: 50%;
+	width: 50%;
 	margin: 5% auto;
 	line-height: 25px;
 	text-align: justify;
+}
+
+@media screen and (max-width: 768px){
+	.about_us_image{
+		width: 90%;
+	}
+
+	.about_us_text{
+		width: 90%;
+	}
 }
 
 .contact_us_header{
