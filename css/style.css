@@ -68,6 +68,13 @@ body{
 	display: inline-block;
 }
 
+@media screen and (max-width: 768px){
+	.navlink_listitem{
+		display:block;
+		line-height: 1.5rem;
+	}
+}
+
 .navlink{
  text-decoration: none;
  outline: none;
