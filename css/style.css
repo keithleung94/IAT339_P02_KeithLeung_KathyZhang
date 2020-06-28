@@ -186,7 +186,7 @@ p{
 }
 
 .product_image{
-	width: 100%;
+	width: 60%;
 }
 
 
@@ -288,7 +288,7 @@ p{
 
 .detailed_product_image_box{
 	flex: 1 3 auto;
-	max-width: 40%;
+	max-width: 30%;
 }
 
 .detailed_product_text_box{
