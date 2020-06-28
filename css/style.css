@@ -195,6 +195,13 @@ p{
 	margin: 3% auto;
 }
 
+.decoration_line_center{
+	align: center;
+	width: 60%;
+	margin: auto;
+	margin-top: 5%;
+}
+
 .decoration_line_left{
 	float:center;
 	width: 35%;
