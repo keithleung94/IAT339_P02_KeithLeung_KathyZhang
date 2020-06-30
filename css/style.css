@@ -6,7 +6,20 @@
 	}
 	#sidebar {
 		display: none;
+		
 	}
+}
+
+.comment{ 
+	width: 70%;
+	font-family: 'cinzel', sans-serif; 
+}
+.commentbutton{
+	border: 1px;
+	background: black;
+	color: white;
+	width: 10%;
+	font-family: 'cinzel', sans-serif; 
 }
 
 #navbar {
