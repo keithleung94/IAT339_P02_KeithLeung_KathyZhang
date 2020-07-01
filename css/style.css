@@ -17,8 +17,8 @@
 }
 
 .line{
-	width:100%; 
-	border:1px 
+	width:100%;
+	border:1px
 	color: gray;
 	margin: 20px;
 	align: center;
@@ -124,10 +124,10 @@
 }
 
 
-.item{ 
+.item{
 	display: inline-block;
 	padding-left: 100px;
-} 
+}
 
 .price{
 	color: gray;
@@ -367,13 +367,16 @@ p{
 }
 
 #product_box_item {
-  flex: 1 1 auto;
+  flex: 1 1 33.3%;
   margin: 2rem 0;
-	max-width: 30%;
+	min-width: 400px;
+	max-width: 33.3%;
 }
 
 .product_text{
 	font-family: 'Montserrat', sans-serif;
+	max-width: 80%;
+	margin: auto;
 }
 
 .product_image{
