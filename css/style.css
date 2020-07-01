@@ -259,7 +259,7 @@ body{
 	display: inline-block;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 600px){
 	.navlink_listitem{
 		display:block;
 		line-height: 1.5rem;
@@ -377,6 +377,7 @@ p{
 	font-family: 'Montserrat', sans-serif;
 	max-width: 80%;
 	margin: auto;
+
 }
 
 .product_image{
