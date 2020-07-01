@@ -219,7 +219,7 @@ body{
 }
 
 .bow{
-	width:15% auto;
+	max-width: 15%;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -227,7 +227,7 @@ body{
 }
 
 .bow1{
-	width:15% auto;
+	width: 10%;
 	position: fixed;
 	right: 0;
 	bottom: 0;
@@ -369,8 +369,18 @@ p{
 #product_box_item {
   flex: 1 1 33.3%;
   margin: 2rem 0;
-	min-width: 400px;
-	max-width: 33.3%;
+}
+
+@media screen and (max-width: 1000px) {
+	#product_box_item {
+		flex: 0 0 50%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#product_box_item {
+		flex: 0 1 75%;
+	}
 }
 
 .product_text{
