@@ -3,21 +3,26 @@
  <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
   <title>ALLECHE Style Guide</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  	<link rel="stylesheet" href="css/style.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
  </head>
 
 
 
  <body>
   <h1>ALLECHE's STYLE GUIDE</h1>
-
+    <div>
     <ul>
-      <li>< a href=" ">citation page</ a></li>
-      <li>< a href="wireframe.html">wireframe page</ a></li>
+      <li><a href="citation.html ">citation page</a></li>
+      <li><a href="wireframe.html">wireframe page</a></li>
     </ul>
-
+    </div>
+  <div class="line"><hr /></div>
+<div>
   <p><h3>INTERACTIVE ELEMENTS</h3></p >
   
   <h4>In-text link</h4>
@@ -28,8 +33,9 @@
   <p>CSS Selector</p >
   <p>.intextlink, .intextlink:hower, .intextlink:focus</p >
   
-  <div style="width:500px; border:1px solid gray;"></div>
+  <div class="line"><hr /></div>
   
+</div>
   <h4>Navigation button</h4>
   <p>Rendered Element</p >
   <button class="navbutton">Click Me</button>
@@ -38,7 +44,7 @@
   <p>CSS Selector</p >
   <p>.navbutton, .navbutton:hover, .navbutton:focus</p >
 
-  <div style="width:500px; border:1px solid gray;"></div>
+    <div class="line"><hr /></div>
 
   <h4>Submit and reset button</h4>
   <p>Rendered Element</p >
@@ -48,7 +54,7 @@
   <p>CSS Selector</p >
   <p>.subbutton, .subbutton:hover, .subbutton:focus</p >
   
-  <div style="width:500px; border:1px solid gray;"></div>
+    <div class="line"><hr /></div>
 
   <h4>Text input field and label</h4>
   <p>Rendered Element</p >
@@ -58,7 +64,7 @@
   <p>CSS Selector</p >
   <p>.textinput</p >
 
- <div style="width:500px; border:1px solid gray;"></div>
+  <div class="line"><hr /></div>
 
   <h4>Website colour swatches</h4>
   <p>Rendered Element</p >
@@ -112,7 +118,8 @@
   <p>CSS Selector</p >
   <p>#color1</p >
 
-
+  <div class="line"><hr /></div>
+  
   <br><br>
   <p><h3>TEXT STYLING</h3></p >
   <h4>Heading</h4>
@@ -125,7 +132,7 @@
   <p>CSS Selector</p >
   <p>.h3</p >
   
-  <div style="width:500px; border:1px solid gray;"></div>
+    <div class="line"><hr /></div>
 
   <h4>Paragraph</h4>
   <p>Rendered Element</p >
@@ -135,7 +142,7 @@
   <p>CSS Selector</p >
   <p>.para</p >
 
-  <div style="width:500px; border:1px solid gray;"></div>
+   <div class="line"><hr /></div>
 
   <h4>Bulletted list</h4>
   <p>Rendered Element</p >
@@ -145,7 +152,7 @@
   <p>CSS Selector</p >
   <p>.bulletlist, .bulletlist ul, .bulletlist li</p >
 
-  <div style="width:500px; border:1px solid gray;"></div>
+   <div class="line"><hr /></div>
 
   <h4>Numbered lists</h4>
   <p>Rendered Element</p >
@@ -155,77 +162,142 @@
   <p>CSS Selector</p >
   <p>.numberlist, .numberlist ul, .numberlist li</p >
 
+  <div class="line"><hr /></div>
 
   <br><br>
   <p><h3>MODULAR PATTERN ELEMENTS</h3></p >
 
   <h4>Main navigation module</h4>
-  <h1 class="brandname">ALLECHE</h1>
-  <h4 class="location">london</h4>
+ 
+    <a class="logolink" href="index.html">
+			<div class="logo">
+				<h1>ALLECHE</h1>
+				<h4>LONDON</h4>
+			</div>
+		</a>
+		<nav id="navbar">
+			<ul>
+					<li class="navlink_listitem">
+						<a href="productnew.html" class="navlink">
+							<h4>WHAT'S NEW</h4></a>
+					</li>
+					<li class="navlink_listitem">
+						<a href="product.html" class="navlink">
+							<h4>SCENTS&PRODUCTS</h4></a>
+					</li>
+					<li class="navlink_listitem">
+						<a href="productgift.html" class="navlink">
+							<h4>GIFTS</h4></a>
+					</li>
+					<li class="navlink_listitem">
+						<a href="infor.html" class="navlink">
+							<h4>ABOUT US</h4></a>
+					</li>
+					<li class="navlink_listitem">
+						<a href="contact.html" class="navlink">
+							<h4>CONTACT</h4></a>
+					</li>
+			</ul>
+		</nav>
 
-  <div class="navi">
-    <ul> 
-     <li>< a href="#">WHAT'S NEW</ a></li> 
-      <li>< a href="#">SCENT & PRODUCTS</ a></li> 
-      <li>< a href="#">GIFTS</ a></li> 
-      <li>< a href="#">CONTACT</ a></li> 
-      <li>< a href="#">ABOUT US</ a></li>
-    </ul> 
-  </div>
-  < img class="cover" src="c.jpg" alt="">
-  
+        
   <p>Sample Code</p >
-  <xmp><h4>Main navigation module</h4>
-  <h1 class="brandname">ALLECHE</h1>
-  <h4 class="location">london</h4>
-
-  <div class="navi">
-    <ul> 
-     <li>< a href="#">WHAT'S NEW</ a></li> 
-      <li>< a href="#">SCENT & PRODUCTS</ a></li> 
-      <li>< a href="#">GIFTS</ a></li> 
-      <li>< a href="#">CONTACT</ a></li> 
-      <li>< a href="#">ABOUT US</ a></li>
-    </ul> 
-    < img class="cover" src="c.jpg" alt="" width=700px></xmp>
+  <xmp><a class="logolink" href="index.html">
+			<div class="logo">
+				<h1>ALLECHE</h1>
+				<h4>LONDON</h4>
+			</div>
+		</a>
+		<nav id="navbar">
+			<ul>
+					<li class="navlink_listitem">
+						<a href="productnew.html" class="navlink">
+							<h4>WHAT'S NEW</h4></a>
+					</li>
+					<li class="navlink_listitem">
+						<a href="product.html" class="navlink">
+							<h4>SCENTS&PRODUCTS</h4></a>
+					</li>
+					<li class="navlink_listitem">
+						<a href="productgift.html" class="navlink">
+							<h4>GIFTS</h4></a>
+					</li>
+					<li class="navlink_listitem">
+						<a href="infor.html" class="navlink">
+							<h4>ABOUT US</h4></a>
+					</li>
+					<li class="navlink_listitem">
+						<a href="contact.html" class="navlink">
+							<h4>CONTACT</h4></a>
+					</li>
+			</ul>
+		</nav></xmp>
   </div>
 
   
   <p>CSS Selector</p >
   <p>.brandname, .location,.navi,.navi:li,.navi:a</p >
 
-  <div style="width:500px; border:1px solid gray;"></div>
+  <div class="line"><hr /></div>
 
   <h4>Product listing</h4>
-  <section>
-     <div class="item"> 
-        < img src="timg.jpg" alt="" height="240" width="200"> 
-        <h5>Nectarine Blossom & Honey</h5> 
-        <h6 class="price">$70 - $140</h6>
-     </div>
-     <div class="item"> 
-        < img src="timg-2.jpg" alt="" height="240" width="200"> 
-        <h5>Orange Blossom</h5> 
-        <h6 class="price">$75 - $150</h6>
-     </div>
-     <div class="item"> 
-        < img src="t5.jpg" alt="" height="240" width="200"> 
-        <h5>Wild Bluebell</h5> 
-        <h6 class="price">$85 - $170</h6>
-     </div>
-    </section>
+  
+  <div class="productline_intro">
+				<h3>BESTSELLERS</h3>
+				<p>Our customers love these, and so should you.</p>
+		</div>
+
+		<div id="product_box">
+			<div id="product_box_item">
+				<a href="detail.html">
+					<img src="img/peony.jpg" alt="product image" class="product_image">
+				</a>
+				<h4>PEONY & BLUSH SUEDE</h4>
+				<p class="product_text">Peonies in voluptuous bloom, exquisitely fragile</p>
+				<h4>$130.00</h4>
+			</div>
+
+			<div id="product_box_item">
+				<a href="detailorange.html">
+					<img src="img/PRO2.jpg" alt="product image" class="product_image">
+				</a>
+				<h4>ORANGE BLOSSOM</h4>
+				<p class="product_text">Clementine flower sparkles over a heart of orange blossom and water lily.</p>
+				<h4>$130.00</h4>
+			</div>
+		</div>
+        
   <p>Sample Code</p >
   <xmp> 
-    <div class="item"> 
-        < img src="timg.jpg" alt="" height="240" width="200"> 
-        <h5>Nectarine Blossom & Honey</h5> 
-        <h6 class="price">$70 - $140</h6>    
-    </div>
+    <div class="productline_intro">
+				<h3>BESTSELLERS</h3>
+				<p>Our customers love these, and so should you.</p>
+		</div>
+
+		<div id="product_box">
+			<div id="product_box_item">
+				<a href="detail.html">
+					<img src="img/peony.jpg" alt="product image" class="product_image">
+				</a>
+				<h4>PEONY & BLUSH SUEDE</h4>
+				<p class="product_text">Peonies in voluptuous bloom, exquisitely fragile</p>
+				<h4>$130.00</h4>
+			</div>
+
+			<div id="product_box_item">
+				<a href="detailorange.html">
+					<img src="img/PRO2.jpg" alt="product image" class="product_image">
+				</a>
+				<h4>ORANGE BLOSSOM</h4>
+				<p class="product_text">Clementine flower sparkles over a heart of orange blossom and water lily.</p>
+				<h4>$130.00</h4>
+			</div>
+		</div>
    </xmp>
   <p>CSS Selector</p >
   <p>.item</p >
 
-  <div style="width:500px; border:1px solid gray;"></div>
+    <div class="line"><hr /></div>
 
   <h4>Website grid structure</h4>
   <div class="container">
@@ -324,33 +396,62 @@
   </div></xmp>
   <p>CSS Selector</p >
   <p>.container, .photo, .photo p, .six, .six .s, .six p, .six .t</p >
-  <div style="width:500px; border:1px solid gray;"></div>
+  
+    <div class="line"><hr /></div>
 
   <h4>Product Review form</h4>
-  <div style="height: 300px">
-    <div class="photo" style="height: 60px;"><br><p>custumor review</p ></div><br>
-    
-    <div class="six" style="flex-wrap: nowrap">
-      <div class="t" style="width: 14%; background-color: white"></div>
-      <div class="t" style="width: 20%;">< img src="cus.jpeg" width="185" height="175">
-        <h5>Kahty zhang</h5s></div>
-      <div class="t" style="width: 50%;background-color: white"><p>rating: # # # # #</p >
-        <p>I like it very much. It smells super good. Hightly recommend!</p ></div>
-      <div class="t" style="width: 14%;background-color: white"></div>
-    </div>
-  </div>
+  
+  	<div class="customer_reviews_box">
+		<div class="customer_review_header">
+				<h3>Customer Reviews</h3>
+		</div>
+		<div class="review_info">
+					<h2 class="rating">4.6/5 Rating</h2>
+					 <img src="img/star.jpg" width="3%"> <img src="img/star.jpg" width="3%"> <img src="img/star.jpg" width="3%"> <img src="img/star.jpg" width="3%"> <img src="img/starh.jpg" width="3%">
+					<h4>401 Reviews</h4>
+					<a href="addcomment.html" class="write_a_review">Write a Review</a>
+		</div>
+
+		<div class="customer_image_box">
+					<img src="img/cus1.jpg" alt="customer image" class="customer_image">
+					<h3>Kaleb Morrison</h3>
+		</div>
+		<div class="customer_text_box">
+					<div class="customer_review_text">
+						<h3 class="review_title">5/5</h3>
+						<h4 class="review_title">I would buy this for any woman in my life.</h4>
+						<p class="review_body">
+						Fast forward a 2 years and I had a girlfriend. What to get her? Call it selfish, but I wanted something that we both could enjoy. Looked back through some old photos to find out the name of this amazing fragrance and boom. Christmas done right. We broke up and sadly she did not return the perfume to me, but its fine, I can buy it for the next lady in my life. Women may break your heart, but this scent? It puts the pieces back together again.</p>
+				    </div>
+		</div>
+	</div>
+
 
   <p>Sample Code</p >
-  <xmp><div class="photo" style="height: 60px;"><br><p>custumor review</p ></div><br>
-    
-    <div class="six" style="flex-wrap: nowrap">
-      <div class="t" style="width: 14%; background-color: white"></div>
-      <div class="t" style="width: 20%;">< img src="cus.jpeg" width="185" height="175">
-        <p>Kahty zhang</p ></div>
-      <div class="t" style="width: 50%;"><p>rating: # # # # #</p >
-        <p>I like it very much. It smells super good. Hightly recommend!</p ></div>
-      <div class="t" style="width: 14%;background-color: white"></div>
-    </div></xmp>
+  <xmp><div class="customer_reviews_box">
+		<div class="customer_review_header">
+				<h3>Customer Reviews</h3>
+		</div>
+		<div class="review_info">
+					<h2 class="rating">4.6/5 Rating</h2>
+					 <img src="img/star.jpg" width="3%"> <img src="img/star.jpg" width="3%"> <img src="img/star.jpg" width="3%"> <img src="img/star.jpg" width="3%"> <img src="img/starh.jpg" width="3%">
+					<h4>401 Reviews</h4>
+					<a href="addcomment.html" class="write_a_review">Write a Review</a>
+		</div>
+
+		<div class="customer_image_box">
+					<img src="img/cus1.jpg" alt="customer image" class="customer_image">
+					<h3>Kaleb Morrison</h3>
+		</div>
+		<div class="customer_text_box">
+					<div class="customer_review_text">
+						<h3 class="review_title">5/5</h3>
+						<h4 class="review_title">I would buy this for any woman in my life.</h4>
+						<p class="review_body">
+						Fast forward a 2 years and I had a girlfriend. What to get her? Call it selfish, but I wanted something that we both could enjoy. Looked back through some old photos to find out the name of this amazing fragrance and boom. Christmas done right. We broke up and sadly she did not return the perfume to me, but its fine, I can buy it for the next lady in my life. Women may break your heart, but this scent? It puts the pieces back together again.</p>
+				    </div>
+		</div>
+	</div></xmp>
   
   <p>CSS Selector</p >
   <p>.photo, .photo p, .six, .six .t</p >
