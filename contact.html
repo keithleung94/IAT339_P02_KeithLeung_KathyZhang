@@ -6,7 +6,92 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
+		<style type="text/css">
+        .talk_con{
+            width:30%;
+            border:1px solid #666;
+            margin:50px auto 0;
+            background:#f9f9f9;
+        }
+        .talk_show{
+			width:100%;
+			padding-top: 50%;
+            border:1px solid #666;
+            background:#fff;
+            margin:10px auto 0;
+            overflow:auto;
+        }
+        .talk_input{
+            width:90%;
+            margin:0;
+        }
+        
+		.whotalk{
+            width:30%;
+            float:left;
+            outline:none;
+        }
+		
+        .talk_word{
+            width:100%;
+            float:right;
+            outline:none;
+            text-indent:100px;
+        }        
+        .talk_sub{
+            width:30%;
+            float:right;
+        }
+   
+        .atalk span{
+            display:inline-block;
+            background:black;
+            border-radius:10px;
+            color:white;
+            padding:1px 1px;
+			float:left;
+        }
+        .btalk{
+            margin:10px;
+            text-align:right;
+        }
+        .btalk span{
+            display:inline-block;
+            background:#FAEBD7;
+            border-radius:10px;
+            color:black;
+            padding:1px 1px;
+			float:right;
+        }
+    </style>
+    <script type="text/javascript">      
+    // 
+        window.onload = function(){
+            var Words = document.getElementById("words");
+            var Who = document.getElementById("who");
+            var TalkWords = document.getElementById("talkwords");
+            var TalkSub = document.getElementById("talksub");
+            
+
+            TalkSub.onclick = function(){
+	    
+                var str = "";
+                if(TalkWords.value == ""){
+                    alert("Please enter something");
+                    return;
+                }
+              if( TalkWords.value == "Gift for mom"){
+                    str = '<div class="btalk"><span>You: ' + TalkWords.value +'</span></div>' ;  
+                }
+                Words.innerHTML = Words.innerHTML + str;
+            }
+            
+        }
+    </script>
 	</head>
+
 	<body>
 		<img class="bow" src="img/bow.png">
 		<img class="bow1" src="img/bow1.png">
@@ -42,6 +127,9 @@
 		</nav>
 
 
+		
+
+
 		<div class="how_we_started">
 			<div class="decoration_line_left"><hr></div>
 			<div class="how_we_started_text">
@@ -75,7 +163,7 @@
 				</div>
 			</div>
 		</div>
-		
+	
 		
 		
 		<div class="contact_box">
@@ -150,5 +238,16 @@
 			</div>
 		</div>
 		
+		<div class="talk_con">
+			<div class="talk_show" id="words">
+				<div class="atalk"><span id="asay">ALLECHE：Any questions？</span></div>
+				<div class="btalk"><span id="bsay">You：yes.</span></div>
+			</div>
+			<div class="talk_input" >
+				
+				<input type="text" class="talk_word" id="talkwords" value="Gift for mom">
+				<input type="button" value="Send" class="talk_sub" id="talksub" value="Gift for mom" >
+			</div>
+		</div>
 	</body>
 </html>
