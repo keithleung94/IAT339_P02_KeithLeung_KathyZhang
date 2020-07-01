@@ -174,8 +174,34 @@
 	margin: auto;
 }
 
+.footer {
+	width: 100%;
+	background-color: black;
+	padding: 5rem 0;
+	margin-top: 10%;
+	bottom: 0;
+	/* min-height: 400px; */
+}
 
+.footlink {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
+	display: block;
+}
 
+.footlink:hover {
+	text-decoration: underline;
+}
+
+.foothead {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2rem;
+	font-weight: 500;
+	display: block;
+	margin-bottom: 1rem;
+}
 
 .cart{
    position: fixed;
@@ -227,7 +253,7 @@ body{
 }
 
 .bow1{
-	width: 10%;
+	width: 5%;
 	position: fixed;
 	right: 0;
 	bottom: 0;
