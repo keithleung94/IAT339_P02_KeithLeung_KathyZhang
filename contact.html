@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta charset="{CHARSET}">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400&display=swap" rel="stylesheet">
@@ -27,24 +28,24 @@
             width:90%;
             margin:0;
         }
-        
+
 		.whotalk{
             width:30%;
             float:left;
             outline:none;
         }
-		
+
         .talk_word{
             width:100%;
             float:right;
             outline:none;
             text-indent:100px;
-        }        
+        }
         .talk_sub{
             width:30%;
             float:right;
         }
-   
+
         .atalk span{
             display:inline-block;
             background:black;
@@ -66,28 +67,28 @@
 			float:right;
         }
     </style>
-    <script type="text/javascript">      
-    // 
+    <script type="text/javascript">
+    //
         window.onload = function(){
             var Words = document.getElementById("words");
             var Who = document.getElementById("who");
             var TalkWords = document.getElementById("talkwords");
             var TalkSub = document.getElementById("talksub");
-            
+
 
             TalkSub.onclick = function(){
-	    
+
                 var str = "";
                 if(TalkWords.value == ""){
                     alert("Please enter something");
                     return;
                 }
               if( TalkWords.value == "Gift for mom"){
-                    str = '<div class="btalk"><span>You: ' + TalkWords.value +'</span></div>' ;  
+                    str = '<div class="btalk"><span>You: ' + TalkWords.value +'</span></div>' ;
                 }
                 Words.innerHTML = Words.innerHTML + str;
             }
-            
+
         }
     </script>
 	</head>
@@ -128,7 +129,7 @@
 		</nav>
 
 
-		
+
 
 
 		<div class="how_we_started">
@@ -164,9 +165,9 @@
 				</div>
 			</div>
 		</div>
-	
-		
-		
+
+
+
 		<div class="contact_box">
 			<div class="contact_image_box_item">
 				<h3>TOKYO</h3>
@@ -238,14 +239,14 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="talk_con">
 			<div class="talk_show" id="words">
 				<div class="atalk"><span id="asay">ALLECHE：Any questions？</span></div>
 				<div class="btalk"><span id="bsay">You：yes.</span></div>
 			</div>
 			<div class="talk_input" >
-				
+
 				<input type="text" class="talk_word" id="talkwords" value="Gift for mom">
 				<input type="button" value="Send" class="talk_sub" id="talksub" value="Gift for mom" >
 			</div>
