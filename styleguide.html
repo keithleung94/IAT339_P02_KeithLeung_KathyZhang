@@ -1,0 +1,459 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>ALLECHE Style Guide</title>
+
+  	<link rel="stylesheet" href="css/style.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+ </head>
+
+
+
+ <body>
+  <h1>ALLECHE's STYLE GUIDE</h1>
+    <div>
+    <ul>
+      <li><a href="citation.html ">citation page</a></li>
+      <li><a href="wireframe.html">wireframe page</a></li>
+    </ul>
+    </div>
+  <div class="line"><hr /></div>
+<div>
+  <p><h3>INTERACTIVE ELEMENTS</h3></p >
+  
+  <h4>In-text link</h4>
+  <p>Rendered Element</p >
+  < a href="#" class="intextlink">This is a link</ a>
+  <p>Sample Code</p >
+  <xmp>< a href="#" class="intextlink">This is a link</ a></xmp>
+  <p>CSS Selector</p >
+  <p>.intextlink, .intextlink:hower, .intextlink:focus</p >
+  
+  <div class="line"><hr /></div>
+  
+</div>
+  <h4>Navigation button</h4>
+  <p>Rendered Element</p >
+  <button class="navbutton">Click Me</button>
+  <p>Sample Code</p >
+  <xmp>< a href="#" class="intextlink">This is a link</ a></xmp>
+  <p>CSS Selector</p >
+  <p>.navbutton, .navbutton:hover, .navbutton:focus</p >
+
+    <div class="line"><hr /></div>
+
+  <h4>Submit and reset button</h4>
+  <p>Rendered Element</p >
+  <button class="subbutton">Sumbit</button>&emsp;<button class="button">Reset</button>
+  <p>Sample Code</p >
+  <xmp><button type="button">Sumbit</button> <button type="button">Reset</button></xmp>
+  <p>CSS Selector</p >
+  <p>.subbutton, .subbutton:hover, .subbutton:focus</p >
+  
+    <div class="line"><hr /></div>
+
+  <h4>Text input field and label</h4>
+  <p>Rendered Element</p >
+  <div class="textinput">Search:<input type="text" value=""></div> 
+  <p>Sample Code</p >
+  <xmp><div class="textinput">Search:<input type="text" value=""></div> </xmp>
+  <p>CSS Selector</p >
+  <p>.textinput</p >
+
+  <div class="line"><hr /></div>
+
+  <h4>Website colour swatches</h4>
+  <p>Rendered Element</p >
+  <canvas id="color1"></canvas>
+  <canvas id="color2"></canvas>
+  <canvas id="color4"></canvas>
+  <canvas id="color3"></canvas>
+  <script>
+    var c = document.getElementById("color1");
+    var ctx = c.getContext("2d");
+    ctx.font = "22px Verdana";
+    ctx.fillText("Beige",110,50)
+    ctx.fillText("Hex: #f5edce",70,80)
+    ctx.fillText("rgb(245,237,206)",50,110)
+  </script>
+  <script>
+    var c = document.getElementById("color2");
+    var ctx = c.getContext("2d");
+    ctx.font = "22px Verdana";
+    ctx.fillText("Pear",120,50)
+    ctx.fillText("Hex: #e9f2bd",70,80)
+    ctx.fillText("rgb(233,242,189)",50,110)
+  </script>
+  <script>
+    var c = document.getElementById("color3");
+    var ctx = c.getContext("2d");
+    ctx.font = "22px Verdana";
+    ctx.fillText("Black",120,50)
+    ctx.fillText("Hex: #e9f2bd",70,80)
+    ctx.fillText("rgb(233,242,189)",50,110)
+  </script>
+  <script>
+    var c = document.getElementById("color4");
+    var ctx = c.getContext("2d");
+    ctx.font = "22px Verdana";
+    ctx.fillText("Amber",120,50)
+    ctx.fillText("Hex: #e9f2bd",70,80)
+    ctx.fillText("rgb(233,242,189)",50,110)
+  </script>
+
+  <p>Sample Code</p >
+  <xmp><canvas id="color1"></canvas></xmp>
+  <xmp><script>
+    var c = document.getElementById("color1");
+    var ctx = c.getContext("2d");
+    ctx.font = "22px Verdana";
+    ctx.fillText("Beige",110,50)
+    ctx.fillText("Hex: #f5edce",70,80)
+    ctx.fillText("rgb(245,237,206)",50,110)
+  </script></xmp>
+  <p>CSS Selector</p >
+  <p>#color1</p >
+
+  <div class="line"><hr /></div>
+  
+  <br><br>
+  <p><h3>TEXT STYLING</h3></p >
+  <h4>Heading</h4>
+  <p>Rendered Element</p >
+  <h1>heading in h1</h1> <h2>heading in h2</h2> 
+  <h3 class="h3">HEADING IN H3</h3><h4 class="h3">HEADING IN H4</h4><h5 class="h3">HEADING IN H5</h5>
+  <p>Sample Code</p >
+  <xmp><h1>heading in h1</h1> <h2>heading in h2</h2>
+<h3 class="h3">HEADING IN H3</h3><h4 class="h3">HEADING IN H4</h4><h5 class="h3">HEADING IN H5</h5></xmp>
+  <p>CSS Selector</p >
+  <p>.h3</p >
+  
+    <div class="line"><hr /></div>
+
+  <h4>Paragraph</h4>
+  <p>Rendered Element</p >
+  <p class="para">This is a paragraph.</p >
+  <p>Sample Code</p >
+  <xmp><p class="para">This is a paragraph.</p ></xmp>
+  <p>CSS Selector</p >
+  <p>.para</p >
+
+   <div class="line"><hr /></div>
+
+  <h4>Bulletted list</h4>
+  <p>Rendered Element</p >
+  <ul><li>update</li><li>contact</li><li>infromation</li></ul>
+  <p>Sample Code</p >
+  <xmp><ul><li>update</li><li>contact</li><li>infromation</li></ul></xmp>
+  <p>CSS Selector</p >
+  <p>.bulletlist, .bulletlist ul, .bulletlist li</p >
+
+   <div class="line"><hr /></div>
+
+  <h4>Numbered lists</h4>
+  <p>Rendered Element</p >
+  <ol><li>update</li><li>contact</li><li>infromation</li></ol>
+  <p>Sample Code</p >
+  <xmp><ul><li>update</li><li>contact</li><li>infromation</li></ul></xmp>
+  <p>CSS Selector</p >
+  <p>.numberlist, .numberlist ul, .numberlist li</p >
+
+  <div class="line"><hr /></div>
+
+  <br><br>
+  <p><h3>MODULAR PATTERN ELEMENTS</h3></p >
+
+  <h4>Main navigation module</h4>
+ 
+    <a class="logolink" href="index.html">
+			<div class="logo">
+				<h1>ALLECHE</h1>
+				<h4>LONDON</h4>
+			</div>
+		</a>
+		<nav id="navbar">
+			<ul>
+					<li class="navlink_listitem">
+						<a href="productnew.html" class="navlink">
+							<h4>WHAT'S NEW</h4></a>
+					</li>
+					<li class="navlink_listitem">
+						<a href="product.html" class="navlink">
+							<h4>SCENTS&PRODUCTS</h4></a>
+					</li>
+					<li class="navlink_listitem">
+						<a href="productgift.html" class="navlink">
+							<h4>GIFTS</h4></a>
+					</li>
+					<li class="navlink_listitem">
+						<a href="infor.html" class="navlink">
+							<h4>ABOUT US</h4></a>
+					</li>
+					<li class="navlink_listitem">
+						<a href="contact.html" class="navlink">
+							<h4>CONTACT</h4></a>
+					</li>
+			</ul>
+		</nav>
+
+        
+  <p>Sample Code</p >
+  <xmp><a class="logolink" href="index.html">
+			<div class="logo">
+				<h1>ALLECHE</h1>
+				<h4>LONDON</h4>
+			</div>
+		</a>
+		<nav id="navbar">
+			<ul>
+					<li class="navlink_listitem">
+						<a href="productnew.html" class="navlink">
+							<h4>WHAT'S NEW</h4></a>
+					</li>
+					<li class="navlink_listitem">
+						<a href="product.html" class="navlink">
+							<h4>SCENTS&PRODUCTS</h4></a>
+					</li>
+					<li class="navlink_listitem">
+						<a href="productgift.html" class="navlink">
+							<h4>GIFTS</h4></a>
+					</li>
+					<li class="navlink_listitem">
+						<a href="infor.html" class="navlink">
+							<h4>ABOUT US</h4></a>
+					</li>
+					<li class="navlink_listitem">
+						<a href="contact.html" class="navlink">
+							<h4>CONTACT</h4></a>
+					</li>
+			</ul>
+		</nav></xmp>
+  </div>
+
+  
+  <p>CSS Selector</p >
+  <p>.brandname, .location,.navi,.navi:li,.navi:a</p >
+
+  <div class="line"><hr /></div>
+
+  <h4>Product listing</h4>
+  
+  <div class="productline_intro">
+				<h3>BESTSELLERS</h3>
+				<p>Our customers love these, and so should you.</p>
+		</div>
+
+		<div id="product_box">
+			<div id="product_box_item">
+				<a href="detail.html">
+					<img src="img/peony.jpg" alt="product image" class="product_image">
+				</a>
+				<h4>PEONY & BLUSH SUEDE</h4>
+				<p class="product_text">Peonies in voluptuous bloom, exquisitely fragile</p>
+				<h4>$130.00</h4>
+			</div>
+
+			<div id="product_box_item">
+				<a href="detailorange.html">
+					<img src="img/PRO2.jpg" alt="product image" class="product_image">
+				</a>
+				<h4>ORANGE BLOSSOM</h4>
+				<p class="product_text">Clementine flower sparkles over a heart of orange blossom and water lily.</p>
+				<h4>$130.00</h4>
+			</div>
+		</div>
+        
+  <p>Sample Code</p >
+  <xmp> 
+    <div class="productline_intro">
+				<h3>BESTSELLERS</h3>
+				<p>Our customers love these, and so should you.</p>
+		</div>
+
+		<div id="product_box">
+			<div id="product_box_item">
+				<a href="detail.html">
+					<img src="img/peony.jpg" alt="product image" class="product_image">
+				</a>
+				<h4>PEONY & BLUSH SUEDE</h4>
+				<p class="product_text">Peonies in voluptuous bloom, exquisitely fragile</p>
+				<h4>$130.00</h4>
+			</div>
+
+			<div id="product_box_item">
+				<a href="detailorange.html">
+					<img src="img/PRO2.jpg" alt="product image" class="product_image">
+				</a>
+				<h4>ORANGE BLOSSOM</h4>
+				<p class="product_text">Clementine flower sparkles over a heart of orange blossom and water lily.</p>
+				<h4>$130.00</h4>
+			</div>
+		</div>
+   </xmp>
+  <p>CSS Selector</p >
+  <p>.item</p >
+
+    <div class="line"><hr /></div>
+
+  <h4>Website grid structure</h4>
+  <div class="container">
+    <div class="photo"><p>cover page photo</p ></div><br>
+    <div class="six">
+      <div class="s"><p>navi</p ></div>
+      <div class="s"><p>navi</p ></div>
+      <div class="s"><p>navi</p ></div>
+      <div class="s"><p>navi</p ></div>
+      <div class="s"><p>navi</p ></div>
+      <div class="s"><p>navi</p ></div>
+      <br><br><br>
+      <div class="t"></div>
+      <div class="t"><p>brand name</p ></div>
+      <div class="t"></div>
+      <br><br><br>
+      <div class="t" style="width: 19%;"></div>
+      <div class="t" style="width: 60%;"><p>text</p ></div>
+      <div class="t" style="width: 19%"></div>
+      <br><br><br>
+      <div class="t" style="width: 19%"></div>
+      <div class="t" style="width: 30%"><p>image</p ></div>
+      <div class="t" style="width: 30%"><p>image</p ></div>
+      <div class="t" style="width: 19%"></div>
+      <br><br><br>
+      <div class="t" style="width: 40%"><p>product listing</p ></div>
+      <div class="t" style="width: 40%"><p>product listing</p ></div>
+      <div class="six" style="flex-wrap: nowrap;">
+        <div class="t" style="width: 31%"><p>price</p ></div>
+        <div class="t" style="width: 0.5%"></div>
+        <div class="t" style="width: 31%"><p>price</p ></div>
+      </div>
+    </div>
+    <br>
+    <div class="six" style="flex-wrap: nowrap;">
+      <div class="t" style="width: 14%;background-color: white"></div>
+      <div class="t" style="width: 35%;"><p>prodect image</p ></div>
+      <div class="t" style="width: 35%;"><p>product description</p ></div>
+      <div class="t" style="width: 14%;background-color: white"></div>
+    </div>
+    <br>
+    <div class="six" style="flex-wrap: nowrap;">
+      <div class="t" style="width: 14%; background-color: white"></div>
+      <div class="t" style="width: 20%;"><p>profile photo</p ></div>
+      <div class="t" style="width: 50%;"><p>custumore review</p ></div>
+      <div class="t" style="width: 14%;background-color: white"></div>
+    </div>
+  </div>
+  <br>
+  <p>Sample Code</p >
+  <xmp><div class="container">
+    <div class="photo"><p>cover page photo</p ></div><br>
+    <div class="six">
+      <div class="s"><p>navi</p ></div>
+      <div class="s"><p>navi</p ></div>
+      <div class="s"><p>navi</p ></div>
+      <div class="s"><p>navi</p ></div>
+      <div class="s"><p>navi</p ></div>
+      <div class="s"><p>navi</p ></div>
+      <br><br><br>
+      <div class="t"></div>
+      <div class="t"><p>brand name</p ></div>
+      <div class="t"></div>
+      <br><br><br>
+      <div class="t" style="width: 19%;"></div>
+      <div class="t" style="width: 60%;"><p>text</p ></div>
+      <div class="t" style="width: 19%"></div>
+      <br><br><br>
+      <div class="t" style="width: 19%"></div>
+      <div class="t" style="width: 30%"><p>image</p ></div>
+      <div class="t" style="width: 30%"><p>image</p ></div>
+      <div class="t" style="width: 19%"></div>
+      <br><br><br>
+      <div class="t" style="width: 40%"><p>product listing</p ></div>
+      <div class="t" style="width: 40%"><p>product listing</p ></div>
+      <div class="six" style="flex-wrap: nowrap;">
+        <div class="t" style="width: 31%"><p>price</p ></div>
+        <div class="t" style="width: 0.5%"></div>
+        <div class="t" style="width: 31%"><p>price</p ></div>
+      </div>
+    </div>
+    <br>
+    <div class="six" style="flex-wrap: nowrap;">
+      <div class="t" style="width: 14%;background-color: white"></div>
+      <div class="t" style="width: 35%;"><p>prodect image</p ></div>
+      <div class="t" style="width: 35%;"><p>product description</p ></div>
+      <div class="t" style="width: 14%;background-color: white"></div>
+    </div>
+    <br>
+    <div class="six" style="flex-wrap: nowrap;">
+      <div class="t" style="width: 14%; background-color: white"></div>
+      <div class="t" style="width: 20%;"><p>profile photo</p ></div>
+      <div class="t" style="width: 50%;"><p>custumore review</p ></div>
+      <div class="t" style="width: 14%;background-color: white"></div>
+    </div>
+  </div></xmp>
+  <p>CSS Selector</p >
+  <p>.container, .photo, .photo p, .six, .six .s, .six p, .six .t</p >
+  
+    <div class="line"><hr /></div>
+
+  <h4>Product Review form</h4>
+  
+  	<div class="customer_reviews_box">
+		<div class="customer_review_header">
+				<h3>Customer Reviews</h3>
+		</div>
+		<div class="review_info">
+					<h2 class="rating">4.6/5 Rating</h2>
+					 <img src="img/star.jpg" width="3%"> <img src="img/star.jpg" width="3%"> <img src="img/star.jpg" width="3%"> <img src="img/star.jpg" width="3%"> <img src="img/starh.jpg" width="3%">
+					<h4>401 Reviews</h4>
+					<a href="addcomment.html" class="write_a_review">Write a Review</a>
+		</div>
+
+		<div class="customer_image_box">
+					<img src="img/cus1.jpg" alt="customer image" class="customer_image">
+					<h3>Kaleb Morrison</h3>
+		</div>
+		<div class="customer_text_box">
+					<div class="customer_review_text">
+						<h3 class="review_title">5/5</h3>
+						<h4 class="review_title">I would buy this for any woman in my life.</h4>
+						<p class="review_body">
+						Fast forward a 2 years and I had a girlfriend. What to get her? Call it selfish, but I wanted something that we both could enjoy. Looked back through some old photos to find out the name of this amazing fragrance and boom. Christmas done right. We broke up and sadly she did not return the perfume to me, but its fine, I can buy it for the next lady in my life. Women may break your heart, but this scent? It puts the pieces back together again.</p>
+				    </div>
+		</div>
+	</div>
+
+
+  <p>Sample Code</p >
+  <xmp><div class="customer_reviews_box">
+		<div class="customer_review_header">
+				<h3>Customer Reviews</h3>
+		</div>
+		<div class="review_info">
+					<h2 class="rating">4.6/5 Rating</h2>
+					 <img src="img/star.jpg" width="3%"> <img src="img/star.jpg" width="3%"> <img src="img/star.jpg" width="3%"> <img src="img/star.jpg" width="3%"> <img src="img/starh.jpg" width="3%">
+					<h4>401 Reviews</h4>
+					<a href="addcomment.html" class="write_a_review">Write a Review</a>
+		</div>
+
+		<div class="customer_image_box">
+					<img src="img/cus1.jpg" alt="customer image" class="customer_image">
+					<h3>Kaleb Morrison</h3>
+		</div>
+		<div class="customer_text_box">
+					<div class="customer_review_text">
+						<h3 class="review_title">5/5</h3>
+						<h4 class="review_title">I would buy this for any woman in my life.</h4>
+						<p class="review_body">
+						Fast forward a 2 years and I had a girlfriend. What to get her? Call it selfish, but I wanted something that we both could enjoy. Looked back through some old photos to find out the name of this amazing fragrance and boom. Christmas done right. We broke up and sadly she did not return the perfume to me, but its fine, I can buy it for the next lady in my life. Women may break your heart, but this scent? It puts the pieces back together again.</p>
+				    </div>
+		</div>
+	</div></xmp>
+  
+  <p>CSS Selector</p >
+  <p>.photo, .photo p, .six, .six .t</p >
+ </body>
+</html>
