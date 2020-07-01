@@ -10,6 +10,14 @@
 	}
 }
 
+.cart{
+   position: fixed;
+    right:-235px;
+	top:250px;
+	z-index: 1;
+
+}
+
 .state{
 	color: red;
 }
