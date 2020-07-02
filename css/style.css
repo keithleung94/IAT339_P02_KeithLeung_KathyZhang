@@ -14,6 +14,7 @@
 	outline: none;
 	color: black;
 	padding: 5px;
+	font-weight: 700;
 }
 
 .line{
@@ -24,12 +25,9 @@
 	align: center;
 }
 .intextlink:hover{
-	border:1px solid  #999999 ;
+	text-decoration: underline;
 }
 
-.intextlink:active{
-	font-weight: bold;
-}
 
 .navbutton{
 	border: none;
@@ -177,7 +175,7 @@
 .footer {
 	width: 100%;
 	background-color: black;
-	padding: 5rem 0;
+	padding: 4rem 0;
 	margin-top: 7%;
 	bottom: 0;
 	/* min-height: 400px; */
@@ -204,11 +202,10 @@
 }
 
 .cart{
-   position: fixed;
-    right:-235px;
+  position: fixed;
+  right:-235px;
 	top:250px;
 	z-index: 1;
-
 }
 
 .state{
@@ -277,6 +274,10 @@ body{
 	color: inherit;
 }
 
+ul {
+	margin: 0.5% 0;
+}
+
 .navlink_listitem {
 	padding: 0 0.25% 1% 0.25%;
 	float: center;
@@ -290,6 +291,11 @@ body{
 		display:block;
 		line-height: 1.5rem;
 	}
+
+	ul {
+		margin: 3% 0;
+	}
+
 }
 
 .navlink{
@@ -320,7 +326,7 @@ a {
 	margin:  2% auto;
 	color: white;
 	font-family: "Cinzel", serif;
-	font-size: 1.25rem;
+	font-size: 1.5vmax;
 	font-weight: 500;
 	line-height: 100px;
 }
@@ -328,7 +334,7 @@ a {
 .brandintro{
 	max-width: 50%;
 	text-align: center;
-	margin: 0 auto 3% auto;
+	margin: 2% auto;
 }
 
 .productline_intro{
