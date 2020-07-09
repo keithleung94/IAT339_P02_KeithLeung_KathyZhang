@@ -1,14 +1,5 @@
 @charset "utf-8";
-@media screen and(max-device-width:500px) {
-	.column {
-		float: none;
-		width: auto;
-	}
-	#sidebar {
-		display: none;
 
-	}
-}
 .intextlink{
 	text-decoration: none;
 	outline: none;
@@ -33,6 +24,8 @@
 	padding: 1rem 2rem;
 	color: white;
 	border-radius: 4px;
+	font-size: 1.2vmax;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .subbutton{
@@ -55,10 +48,6 @@
 	padding-left: 10px;
 	padding-right: 10px;
 	color: black;
-}
-
-.h3{
-	font-family: 'Montserrat',sans-serif;
 }
 
 .footer {
