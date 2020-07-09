@@ -203,9 +203,9 @@
 
 .cart{
   position: fixed;
-  right:-235px;
-	top:250px;
-	z-index: 1;
+  right:-12%;
+	top:20%;
+	z-index: 3;
 }
 
 .state{
@@ -657,6 +657,11 @@ margin-left:auto;
 
 .addtocart_button:active{
  border: solid 1px;
+}
+
+#disabled_button {
+	background-color: #404040;
+  color: white;
 }
 
 #content {
