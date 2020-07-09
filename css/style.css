@@ -17,6 +17,25 @@
 	text-decoration: underline;
 }
 
+
+
+#color1{
+	background-color: #f5edce;
+	width: 15%;
+}
+
+#color2{
+	background-color: #e9f2bd;
+	width: 15%;
+}
+#color4{
+	background-color:#FFC200;
+	width: 15%;
+}
+#color3{
+	background-color:black;
+	width: 15%;
+}
 .shop_button {
 	border: none;
 	background-color: black;
