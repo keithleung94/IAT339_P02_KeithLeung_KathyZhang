@@ -546,6 +546,7 @@ margin-left:auto;
 
 #checkout_button {
 	margin-left: 50%;
+	font-size: 1.25vmax;
 }
 
 .cart_text {
