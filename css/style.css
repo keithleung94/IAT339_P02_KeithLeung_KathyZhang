@@ -435,8 +435,7 @@ p{
 .decoration_line_center{
 	align: center;
 	width: 60%;
-	margin: auto;
-	margin-top: 5%;
+	margin: 1% auto;
 }
 
 .decoration_line_left{
@@ -552,6 +551,19 @@ p{
 	margin-top: 2%;
 	font-size: 1vw;
 }
+
+.review_title {
+	font-family: 'Montserrat', sans-serif;
+	width: 100%;
+}
+
+.review_text_box {
+	height: 4rem;
+	resize: none;
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+}
+
 
 .review_info{
 	width: 100%;
